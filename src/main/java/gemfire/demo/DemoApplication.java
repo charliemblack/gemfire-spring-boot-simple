@@ -24,7 +24,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.gemfire.config.annotation.ClientCacheApplication;
 import org.springframework.data.gemfire.config.annotation.EnableClusterConfiguration;
-import org.springframework.data.gemfire.config.annotation.EnableLogging;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -33,7 +32,6 @@ import java.util.Map;
 
 @EnableClusterConfiguration(useHttp = true, requireHttps = false)
 @ClientCacheApplication
-@EnableLogging
 public class DemoApplication {
 
     @Bean
